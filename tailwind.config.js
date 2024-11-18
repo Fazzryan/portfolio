@@ -3,6 +3,9 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
   },
-  plugins: [],
+  plugins: [
+    ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {})
+  ],
+
 }
 
