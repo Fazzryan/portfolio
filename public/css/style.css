@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Afacad Flux", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+}
+/* nav {
+  font-family: "Poppins","Afacad Flux", sans-serif;
+} */
+.active {
+  border-bottom: 2px solid #22c55e; /* Border color sesuai dengan tema */
+}
+
+/* Navbar styling */
+#navbar {
+  backdrop-filter: none; /* Default tanpa blur */
+  background: rgba(15, 23, 42, 0.9); /* Warna gelap transparan */
+}
+
+/* Blur effect on scroll */
+#navbar.scrolled {
+  backdrop-filter: blur(10px); /* Tambahkan efek blur */
+  background: rgba(15, 23, 42, 0.6); /* Ubah sedikit transparansi */
+}
